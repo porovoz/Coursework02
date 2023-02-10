@@ -8,9 +8,4 @@ public class MonthlyTask extends Task {
     public boolean appearsIn(LocalDate localDate) {
         return localDate.getDayOfMonth() == getDateTime().toLocalDate().getDayOfMonth();
     }
-
-    @Override
-    public boolean contains(String substr) {
-        return super.contains(substr);
-    }
 }

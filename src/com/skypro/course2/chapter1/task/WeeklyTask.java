@@ -8,9 +8,4 @@ public class WeeklyTask extends Task {
     public boolean appearsIn(LocalDate localDate) {
         return localDate.getDayOfWeek() == getDateTime().toLocalDate().getDayOfWeek();
     }
-
-    @Override
-    public boolean contains(String substr) {
-        return super.contains(substr);
-    }
 }

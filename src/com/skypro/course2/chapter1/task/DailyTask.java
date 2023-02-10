@@ -8,9 +8,4 @@ public class DailyTask extends Task {
     public boolean appearsIn(LocalDate localDate) {
         return true;
     }
-
-    @Override
-    public boolean contains(String substr) {
-        return super.contains(substr);
-    }
 }

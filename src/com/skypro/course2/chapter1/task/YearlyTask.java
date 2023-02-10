@@ -8,9 +8,4 @@ public class YearlyTask extends Task {
     public boolean appearsIn(LocalDate localDate) {
         return localDate.getDayOfYear() == getDateTime().toLocalDate().getDayOfYear();
     }
-
-    @Override
-    public boolean contains(String substr) {
-        return super.contains(substr);
-    }
 }

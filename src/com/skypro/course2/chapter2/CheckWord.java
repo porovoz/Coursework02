@@ -25,6 +25,7 @@ public class CheckWord {
         System.out.println("TOP 10 words:");
         Stream<String> inputStringStream = new ArrayList<>(List.of(inputString.split(" "))).stream();
         Map<String, Long> countWordsMap = inputStringStream
+                .map(String::toLowerCase)
                 .collect(Collectors.groupingBy(x -> x, Collectors.counting()));
         countWordsMap.entrySet().stream()
                 .sorted(Map.Entry.<String, Long>comparingByValue().reversed().thenComparing(comparingByKey()))

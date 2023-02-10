@@ -6,11 +6,6 @@ public class OneTimeTask extends Task {
 
     @Override
     public boolean appearsIn(LocalDate localDate) {
-        return false;
-    }
-
-    @Override
-    public boolean contains(String substr) {
-        return super.contains(substr);
+        return localDate == getDateTime().toLocalDate();
     }
 }

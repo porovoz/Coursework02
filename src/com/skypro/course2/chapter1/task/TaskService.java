@@ -37,7 +37,7 @@ public class TaskService {
             }
             else if (localDate.isAfter(taskDate) && taskMap.getValue().appearsIn(localDate)) {
                 System.out.println(taskMap.getKey() + " " + taskMap.getValue());
-            } else throw new TaskNotFoundException("There is no tasks for that date");
+            } else throw new TaskNotFoundException("There is no any task for that date");
         }
     }
 
