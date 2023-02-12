@@ -6,6 +6,6 @@ public class WeeklyTask extends Task {
 
     @Override
     public boolean appearsIn(LocalDate localDate) {
-        return localDate.getDayOfWeek() == getDateTime().toLocalDate().getDayOfWeek();
+        return localDate.getDayOfWeek().equals(getDateTime().toLocalDate().getDayOfWeek());
     }
 }
